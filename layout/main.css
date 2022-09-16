@@ -15,9 +15,9 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    background-color: rgb(0, 0,0, 0.7);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: rgb(0, 0, 0, 0.7);
 }
 
 .navbar-brand {
@@ -27,6 +27,7 @@
 .nav-link {
     font-size: 1.2rem;
 }
+
 /*#########################################################################################*/
 /*####################### INFO ##################################################################*/
 /*#########################################################################################*/
@@ -58,28 +59,27 @@
 
 #hero h1 {
     margin: 0;
-    font-size: 70px;
-    font-weight: 700;
+    font-size: 2rem;
+    font-weight: 500;
     line-height: 64px;
     color: #ffff;
-    font-family: "Popins", sans-serif;
-    font-style: oblique;
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #hero h1:hover {
-	color: #ffa500;
+    color: #ffa500;
 
 }
 
 #hero h2 {
     color: #fff;
     margin: 10px 0 0 0;
-    font-size: 24px;
+    font-size: 1.2rem;
     font-style: italic;
 }
 
 #hero h2:hover {
-	color: #ffa500;
+    color: #ffa500;
 
 }
 
@@ -249,83 +249,305 @@
 /*############################# FOOTER ############################################################*/
 /*#########################################################################################*/
 
-.footer-top{
-	background: #151515;
-	color: #fff;
-	border-bottom: 1px solid #222222;
-	padding: 30px 0 10px 0;
-	text-align: center;
+.footer-top {
+    background: #151515;
+    color: #fff;
+    border-bottom: 1px solid #222222;
+    padding: 30px 0 10px 0;
+    text-align: center;
 }
 
-.footer-top .footer-info{
-	margin-bottom: 30px;
+.footer-top .footer-info {
+    margin-bottom: 30px;
 }
 
-.footer-top .footer-info h3{
-	font-size: 28px;
-	margin-right: 0 0 20px 0;
-	padding: 2px 0 2px 0;
-	line-height: 1;
-	font-weight: 700;
-	text-transform: uppercase;
+.footer-top .footer-info h3 {
+    font-size: 28px;
+    margin-right: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
-.footer-top .footer-info p{
-	font-size: 14px;
-	line-height: 24px;
-	margin-bottom: 0;
+.footer-top .footer-info p {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 0;
 }
 
 
-.footer-top .social-links a{
-	margin-left: 10px;
-	margin-right: 10px;
-	color: white;
-	display: inline-block;
-	border-radius: 4px;
+.footer-top .social-links a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    display: inline-block;
+    border-radius: 4px;
 
 }
 
-.footer-top .social-links a:hover{
-	color: #ffa500;
+.footer-top .social-links a:hover {
+    color: #ffa500;
 }
 
-.footer-top h4{
-	font-size: 16px;
-	font-weight: 600;
-	text-align: center;
+.footer-top h4 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
 }
 
 /*#########################################################################################*/
 /*############################# CARDS ############################################################*/
 /*#########################################################################################*/
 
-.info-cards{
-	margin-top: 50px;
+.info-cards {
+    margin-top: 50px;
 }
 
-.card{
-	width: 18rem;
-	height: 28rem;
+.card {
+    width: 18rem;
+    height: 28rem;
 }
 
-.card img{
-	max-width: 300px;
-	max-height: 200px;
+.card img {
+    max-width: 300px;
+    max-height: 200px;
 }
 
-.card-body .btn{
-	background-color: #ffa500;
-	font-weight: 600;
+.card-body .btn {
+    background-color: #ffa500;
+    font-weight: 600;
 }
 
-.card-body .btn:hover{
+.card-body .btn:hover {
     font-weight: 700;
-    background-color: rgba(255, 165, 0, 0.9);;
+    background-color: rgba(255, 165, 0, 0.9);
+    ;
 
 }
 
-.card-body h5{
+.card-body h5 {
     font-style: oblique;
 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*####### ABOUT PAGE ##################################################################################*/
+/*############################# ABOUT PAGE ################## ABOUT PAGE ##########################################*/
+/*############ ABOUT PAGE ############################# ABOUT PAGE ################################################*/
+
+#about_us {
+    width: 100%;
+    height: 40vh;
+    background: url('images/backgrounds/about_backround.jpg') fixed center center;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+
+#about_us:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+#about_us h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 64px;
+    color: #ffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #ffaa;
+
+}
+
+#about_us h1:hover {
+    color: #ffa500;
+
+}
+
+#about_us .container {
+    position: relative;
+}
+
+#info {
+    background-color: #f9e8d8;
+}
+
+#info p {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.frst_section {
+    padding-top: 50px;
+
+}
+
+.scnd_section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.scnd_section a {
+    color: inherit;
+}
+
+.scnd_section img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    border-color: #D7D7D7;
+    border: 1px solid;
+    padding: 15px;
+
+}
+
+#ending_about {
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.8)), url(images/backgrounds/about.jpg) fixed center center;
+    padding: 50px 0;
+    color: #fff;
+}
+
+#ending_about h1 {
+    margin: 0;
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 64px;
+    color: #ffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #ffaa;
+    padding-bottom: 100px;
+
+}
+
+#ending_about h1:hover {
+    color: #ffa500;
+
+}
+
+#ending_about p {
+    font-size: 1.4rem;
+}
+
+
+
+/*##### PRODUCTS ############################################ PRODUCTS ########################################*/
+/*############################# PRODUCTS ####################### PRODUCTS #####################################*/
+/*########## PRODUCTS ########################## PRODUCTS ################################## PRODUCTS ###################*/
+
+#products {
+    width: 100%;
+    height: 40vh;
+    background: url('images/backgrounds/products_background_nuts.jpg') fixed center center;
+    background-size: cover;
+    position: relative;
+
+
+}
+
+
+#products:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+
+#products h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 64px;
+    color: #ffff;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #ffaa;
+
+}
+
+#products h1:hover {
+    color: #ffa500;
+
+}
+
+#products .container {
+    position: relative;
+}
+
+#storage {
+    background-color: #f9e8d8;
+    padding: 80px 0;
+}
+
+.styles h1 {
+    margin-bottom: 80px;
+}
+
+.styles {
+    padding-bottom: 80px;
+}
+
+.classes h1 {
+    margin-bottom: 80px;
+}
+
+#order {
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.8)), url(images/backgrounds/order_background_nuts.jpg) fixed center center;
+    padding: 50px 0;
+    color: #fff;
 }
