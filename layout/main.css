@@ -34,10 +34,10 @@
 #hero {
 
     width: 100%;
-    height: 100vh;
     background: url('images/backgrounds/top_background_nuts.jpg') fixed center center;
     background-size: cover;
     position: relative;
+    /* justify-content: center;*/
 
 }
 
@@ -54,7 +54,9 @@
 
 #hero .container {
     position: relative;
-    padding-top: 75px;
+    padding-top: 200px;
+    padding-bottom: 100px;
+    max-height: 100%;
 }
 
 #hero h1 {
@@ -64,6 +66,7 @@
     line-height: 64px;
     color: #ffff;
     font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
 }
 
 #hero h1:hover {
@@ -76,6 +79,8 @@
     margin: 10px 0 0 0;
     font-size: 1.2rem;
     font-style: italic;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 #hero h2:hover {
@@ -135,6 +140,11 @@
 
 .about h3:hover {
     color: #ffa500;
+}
+
+#about {
+    background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #b09890);
+    padding: 35px 0 35px 0;
 }
 
 /*#########################################################################################*/
@@ -299,40 +309,43 @@
 /*#########################################################################################*/
 /*############################# CARDS ############################################################*/
 /*#########################################################################################*/
-
-.info-cards {
-    margin-top: 50px;
+.card a{
+    color: inherit;
+    text-decoration:none;
 }
 
 .card {
-    width: 18rem;
-    height: 28rem;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #b09890);
+}
+
+.card:hover {
+    transform: translateY(-15px);
 }
 
 .card img {
-    max-width: 300px;
-    max-height: 200px;
+    object-fit: cover;
 }
 
-.card-body .btn {
-    background-color: #ffa500;
-    font-weight: 600;
-}
-
-.card-body .btn:hover {
-    font-weight: 700;
-    background-color: rgba(255, 165, 0, 0.9);
-    ;
-
-}
 
 .card-body h5 {
     font-style: oblique;
+    text-align: center;
 
 }
 
 
-
+.FlexContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    overflow: none;
+    flex-direction: row;
+}
 
 
 
@@ -377,7 +390,6 @@
 
 }
 
-
 #about_us:before {
     content: "";
     background: rgba(0, 0, 0, 0.6);
@@ -413,8 +425,9 @@
     position: relative;
 }
 
+
 #info {
-    background-color: #f9e8d8;
+    background: radial-gradient(circle farthest-corner at 100px 50px, #FBF2EB, #b09890);
 }
 
 #info p {
@@ -530,7 +543,7 @@
 }
 
 #storage {
-    background-color: #f9e8d8;
+    background: radial-gradient(circle farthest-corner at 20px 10px, #FBF2EB, #b09890);
     padding: 80px 0;
 }
 
@@ -550,4 +563,115 @@
     background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.8)), url(images/backgrounds/order_background_nuts.jpg) fixed center center;
     padding: 50px 0;
     color: #fff;
+}
+
+
+
+/*##### ITEM ############################################ ITEM ########################################*/
+/*############################# ITEM ####################### ITEM ########################### ITEM ##########*/
+/*########## ITEM ########################## ITEM ################################## ITEM ###################*/
+
+
+
+#item {
+    background: radial-gradient(circle farthest-corner at 20px 10px, #FBF2EB, #b09890);
+    padding: 80px 0;
+}
+
+.styles h1 {
+    margin-bottom: 80px;
+}
+
+.styles {
+    padding-bottom: 80px;
+}
+
+.classes h1 {
+    margin-bottom: 80px;
+}
+
+#order {
+    background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.8)), url(images/backgrounds/order_background_nuts.jpg) fixed center center;
+    padding: 50px 0;
+    color: #fff;
+}
+
+.info_section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.info_section a {
+    color: inherit;
+}
+
+.info_section img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    border-color: #D7D7D7;
+    border: 1px solid;
+    padding: 15px;
+
+}
+
+
+
+
+/*########### MEDIA ####################### MEDIA #################### MEDIA ###################################*/
+/*### MEDIA ########################## MEDIA ###################### MEDIA #################### MEDIA ##################*/
+/*############# MEDIA ######################### MEDIA ############################# MEDIA ######################*/
+
+
+/*MAIN*/
+@media (max-width: 485px) {
+
+    .card {
+        width: 150px;
+        height: 150px;
+    }
+
+    .card-body h5 {
+        font-size: 15px;
+
+    }
+}
+
+@media (max-width: 384px) {
+
+    .card {
+        width: 140px;
+        height: 140px;
+    }
+
+    #hero .container {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 365px) {
+
+    .card {
+        width: 100px;
+        height: 100px;
+    }
+
+    .card-body h5 {
+        font-size: 10px;
+
+    }
+
+}
+
+/*ABOUT*/
+@media (max-width: 995px) {
+    #info .pad {
+        padding-bottom: 50px;
+    }
+
+    #item .pad {
+        padding-top: 50px;
+    }
 }
