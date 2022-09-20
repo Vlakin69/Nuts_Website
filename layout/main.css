@@ -309,9 +309,9 @@
 /*#########################################################################################*/
 /*############################# CARDS ############################################################*/
 /*#########################################################################################*/
-.card a{
+.card a {
     color: inherit;
-    text-decoration:none;
+    text-decoration: none;
 }
 
 .card {
@@ -542,6 +542,7 @@
     position: relative;
 }
 
+
 #storage {
     background: radial-gradient(circle farthest-corner at 20px 10px, #FBF2EB, #b09890);
     padding: 80px 0;
@@ -562,9 +563,7 @@
 #order {
     background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(2, 2, 2, 0.8)), url(images/backgrounds/order_background_nuts.jpg) fixed center center;
     padding: 50px 0;
-    color: #fff;
 }
-
 
 
 /*##### ITEM ############################################ ITEM ########################################*/
